@@ -1,17 +1,17 @@
-import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
+// import { useNavigate } from "react-router-dom";
 
 function About() {
-  let navigate = useNavigate();
-  useEffect(() => {
-    if (localStorage.getItem('token')) {
-      navigate('/about')
-    }
-    else{
-      navigate('/login')
-    }
-    // eslint-disable-next-line
-  }, []);
+  // let navigate = useNavigate();
+  // useEffect(() => {
+  //   if (localStorage.getItem('token')) {
+  //     navigate('/about')
+  //   }
+  //   else{
+  //     navigate('/login')
+  //   }
+  //   // eslint-disable-next-line
+  // }, []);
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
       <div className="bg-white rounded-lg shadow-lg p-8 max-w-4xl w-full text-center">
