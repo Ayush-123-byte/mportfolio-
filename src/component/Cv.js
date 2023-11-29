@@ -174,6 +174,7 @@ function Cv() {
             <h2 className="title2  text-2xl font-semibold">
               Professional Skills
             </h2>
+            <div className=" text-black">
             - **Programming Languages:** JavaScript, HTML, CSS <br />
             - **Front-End Development:** React, Redux, HTML5, CSS3, SASS/SCSS,
             Webpack <br />
@@ -186,6 +187,7 @@ function Cv() {
             {/* - **Agile Methodologies:** Scrum, Kanban <br /> */}
             - **UI/UX Design Collaboration** <br />
             - **Problem Solving and Debugging** <br />
+            </div>
           </div>
           <div className="About interest">
             <h2 className="title2  text-2xl font-semibold">Interest</h2>
