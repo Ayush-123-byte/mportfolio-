@@ -11,6 +11,7 @@ import { useState } from "react";
 import Home from "./component/Home";
 import Darkmode from "./context/Darkmode";
 import Nav from "./component/Nav";
+import Projects from "./component/Projects";
 
 function App() {
   const [alert, setAlert] = useState(null);
@@ -36,6 +37,7 @@ function App() {
             <Route exact path="/cv" element={<Cv />} />
             <Route exact path="/about" element={<About />} />
             <Route exact path="/contact" element={<Contact />} />
+            <Route exact path="/projects" element={<Projects />} />
           </Routes>
           <Footer />
         </Router>

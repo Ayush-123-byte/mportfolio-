@@ -8,7 +8,7 @@ const Nav = (props) => {
   let Links = [
     { name: "Home", link: "/" },
     { name: "About", link: "/about" },
-    { name: "Services", link: "/" },
+    { name: "Projects", link: "/projects" },
     { name: "Contact", link: "/contact" },
   ];
   let [open, setOpen] = useState(false);

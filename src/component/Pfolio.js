@@ -14,15 +14,12 @@ import {
   BiLogoTailwindCss,
   BiLogoNodejs,
 } from "react-icons/bi";
-import {
-  RiBootstrapFill,
-  RiMailAddFill,
-} from "react-icons/ri";
+import { RiBootstrapFill, RiMailAddFill } from "react-icons/ri";
 import { SiExpress, SiMongodb } from "react-icons/si";
 import { Link } from "react-router-dom";
 import { darkmode } from "../context/Darkmode";
+import Projects from "./Projects";
 function Pfolio() {
-
   // let navigate = useNavigate();
   // useEffect(() => {
   //   if (localStorage.getItem("token")) {
@@ -37,7 +34,7 @@ function Pfolio() {
   };
   const mode_change1 = {
     backgroundColor: mode === "light" ? "white" : "#262C3C",
-    boxShadow:mode === "light" ? "" : " 0px 3px 4px 0px #373C4A",
+    boxShadow: mode === "light" ? "" : " 0px 3px 4px 0px #373C4A",
   };
   return (
     <>
@@ -94,7 +91,7 @@ function Pfolio() {
                   Fresher <br />
                 </p>
               </div>
-              <div className="details-container educa "  style={mode_change1}>
+              <div className="details-container educa " style={mode_change1}>
                 <PiStudentFill className=" m-auto text-3xl" />
                 <h3 className=" text-3xl font-medium">Education</h3>
                 <p style={mode_change}>
@@ -143,13 +140,17 @@ function Pfolio() {
           </div>
         </div>
       </section>
-      <section id="experience" >
-        <p className="section__text__p1" style={mode_change}>Explore My</p>
+      <section id="experience">
+        <p className="section__text__p1" style={mode_change}>
+          Explore My
+        </p>
         <h1 className="title">Skills</h1>
         <div className="experience-details-container">
-          <div className="about-containers" >
+          <div className="about-containers">
             <div className="details-container" style={mode_change1}>
-              <h2 className="experience-sub-title" style={mode_change}>Frontend Development</h2>
+              <h2 className="experience-sub-title" style={mode_change}>
+                Frontend Development
+              </h2>
               <div className="article-container">
                 <article>
                   <AiFillHtml5 className=" text-3xl" />
@@ -162,7 +163,7 @@ function Pfolio() {
                   <BiLogoCss3 className=" text-3xl" />
                   <div>
                     <h3>CSS</h3>
-                     <p style={mode_change}>Intermediate</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
 
@@ -170,7 +171,7 @@ function Pfolio() {
                   <BiLogoJavascript className=" text-3xl" />
                   <div>
                     <h3>JavaScript</h3>
-                     <p style={mode_change}>Intermediate</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
 
@@ -178,27 +179,29 @@ function Pfolio() {
                   <BiLogoTailwindCss className=" text-3xl" />
                   <div>
                     <h3>Tailwind</h3>
-                     <p style={mode_change}>Intermediate</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <RiBootstrapFill className=" text-3xl" />
                   <div>
                     <h3>Bootstrap</h3>
-                     <p style={mode_change}>Intermediate</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <BiLogoReact className=" text-3xl" />
                   <div>
                     <h3>React</h3>
-                     <p style={mode_change}>Intermediate</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
               </div>
             </div>
             <div className="details-container educa " style={mode_change1}>
-              <h2 className="experience-sub-title" style={mode_change} >Frontend Development</h2>
+              <h2 className="experience-sub-title" style={mode_change}>
+                Frontend Development
+              </h2>
               <div className="article-container">
                 <article>
                   <SiMongodb className=" text-3xl" />
@@ -211,21 +214,21 @@ function Pfolio() {
                   <BiLogoNodejs className=" text-3xl" />
                   <div>
                     <h3>Node JS</h3>
-                     <p style={mode_change}>Intermediate</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <SiExpress className=" text-3xl" />
                   <div>
                     <h3>Express JS</h3>
-                     <p style={mode_change}>Intermediate</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
                 <article>
                   <AiOutlineGithub className=" text-3xl" />
                   <div>
                     <h3>Git</h3>
-                     <p style={mode_change}>Intermediate</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
               </div>
@@ -234,77 +237,22 @@ function Pfolio() {
         </div>
       </section>
       <section id="projects">
-        <p className="section__text__p1" style={mode_change}>Browse My Recent</p>
+        <p className="section__text__p1" style={mode_change}>
+          Browse My Recent
+        </p>
         <h1 className="title">Projects</h1>
-        <div className="experience-details-container">
-          <div className="about-containers">
-            <div className="details-container color-container " style={mode_change1}>
-              <div className="article-container">
-                <img src={vercel} alt="Project 1" className="project-img" />
-              </div>
-              <h2 className="experience-sub-title project-title" style={mode_change}>
-                Vercel Clone
-              </h2>
-              <div className="btn-container">
-                <Link
-                  to={"https://github.com/Ayush-123-byte/velvet1.git"}
-                ></Link>{" "}
-                <button className="btn btn-color-2 project-btn" style={mode_change}>Github</button>
-                <Link to={"https://velvet1.vercel.app/"}>
-                  {" "}
-                  <button className="btn btn-color-2 project-btn" style={mode_change}>
-                    Live Demo
-                  </button>
-                </Link>
-              </div>
-            </div>
-            <div className="details-container color-container"  style={mode_change1}>
-              <div className="article-container educa">
-                <img
-                  src="./assets/project-2.png"
-                  alt="Project 2"
-                  className="project-img"
-                />
-              </div>
-              <h2 className="experience-sub-title project-title"  style={mode_change}>
-                Project Two
-              </h2>
-              <div className="btn-container">
-                <button className="btn btn-color-2 project-btn" style={mode_change}>Github</button>
-                <button className="btn btn-color-2 project-btn" style={mode_change}>
-                  Live Demo
-                </button>
-              </div>
-            </div>
-            <div className="details-container color-container"  style={mode_change1}>
-              <div className="article-container educa">
-                <img
-                  src="./assets/project-3.png"
-                  alt="Project 3"
-                  className="project-img"
-                />
-              </div>
-              <h2 className="experience-sub-title project-title"  style={mode_change}>
-                Project Three
-              </h2>
-              <div className="btn-container">
-                <button className="btn btn-color-2 project-btn"  style={mode_change}>Github</button>
-                <button className="btn btn-color-2 project-btn"  style={mode_change}>
-                  Live Demo
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
+        <Projects />
       </section>
-      <section id="contact" >
-        <p className="section__text__p1"  style={mode_change}>Get in Touch</p>
+      <section id="contact">
+        <p className="section__text__p1" style={mode_change}>
+          Get in Touch
+        </p>
         <h1 className="title">Contact Me</h1>
         <div className="contact-info-upper-container">
           <div className="contact-info-container">
             <RiMailAddFill className=" text-2xl" />
             <p>
-              <Link to="mailto:ayushkumarakt@gmail.com"  style={mode_change}>
+              <Link to="mailto:ayushkumarakt@gmail.com" style={mode_change}>
                 ayushkumarakt@gmail.com
               </Link>
             </p>
@@ -312,7 +260,10 @@ function Pfolio() {
           <div className="contact-info-container">
             <AiFillLinkedin className=" text-2xl" />
             <p>
-              <Link to="https://www.linkedin.com/in/ayush-kumar-3b9798270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"  style={mode_change}>
+              <Link
+                to="https://www.linkedin.com/in/ayush-kumar-3b9798270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                style={mode_change}
+              >
                 LinkedIn
               </Link>
             </p>
