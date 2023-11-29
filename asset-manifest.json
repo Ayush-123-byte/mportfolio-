@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mportfolio/static/css/main.87ac1735.css",
+    "main.js": "/mportfolio/static/js/main.60f9591b.js",
+    "static/media/vercel.png": "/mportfolio/static/media/vercel.bc1c2bcdf1f4b4487064.png",
+    "static/media/pic1.jpg": "/mportfolio/static/media/pic1.51451f8dbbd1eb2610f9.jpg",
+    "index.html": "/mportfolio/index.html",
+    "main.87ac1735.css.map": "/mportfolio/static/css/main.87ac1735.css.map",
+    "main.60f9591b.js.map": "/mportfolio/static/js/main.60f9591b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87ac1735.css",
+    "static/js/main.60f9591b.js"
+  ]
+}
