@@ -3,7 +3,6 @@ import React, { useContext } from "react";
 import "../Style/Pfolio.css";
 import "../Style/Pfoliomedia.css";
 import ayuPic from "../assert/pic1.jpg";
-import vercel from "../assert/vercel.png";
 
 import { AiFillLinkedin, AiOutlineGithub, AiFillHtml5 } from "react-icons/ai";
 import { PiMedalFill, PiStudentFill } from "react-icons/pi";
@@ -207,7 +206,7 @@ function Pfolio() {
                   <SiMongodb className=" text-3xl" />
                   <div>
                     <h3>MongoDB</h3>
-                    <p>Basic</p>
+                    <p style={mode_change}>Basic</p>
                   </div>
                 </article>
                 <article>

@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import notebook from "../assert/notebook.png";
 import bulk from "../assert/bulk.png";
 import vercel from "../assert/vercel1.png";
 import { Link } from "react-router-dom";
+import { darkmode } from "../context/Darkmode";
 
 export default function Projects() {
   const arr = [
@@ -24,25 +25,36 @@ export default function Projects() {
       img: bulk,
       title: "Whatbulk",
       about:
-        " Whatbulk again a demo of a mern app and it is bit similar to note book you and preform crud operation here.",
+        " Whatbulk again a demo of a mern app and it is bit similar to note book you and preform crud operation here and store your files.",
       demo: "https://bulk-f.vercel.app/",
     },
   ];
+
+  const { mode } = useContext(darkmode);
+  const mode_change = {
+    backgroundColor: mode === "light" ? "white" : "#262C3C",
+    color: mode === "dark" ? "white" : "#4B5560",
+    boxShadow: mode === "light" ? "" : " 0px 3px 4px 0px #373C4A",
+  };
+  const mode_change1={
+    color: mode === "dark" ? "white" : "#4B5560",
+
+  }
 
   return (
     <>
       <div className=" mt-10 grid  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 m-auto w-11/12 gap-6">
         {arr.map((ele, ind) => (
-          <div className="block  rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+          <div className="block  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] " style={ mode_change}>
             <Link to="/">
               <img className="rounded-t-lg  m-auto" src={ele.img} alt="img" />
             </Link>
             <hr className=" mt-4" />
             <div className="p-6">
-              <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
+              <h5 className="mb-2 text-xl font-medium leading-tight ">
                 {ele.title}
               </h5>
-              <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+              <p className="mb-4 text-base" style={mode_change1}>
                 {ele.about}
               </p>
               <Link to="https://github.com/Ayush-123-byte">
