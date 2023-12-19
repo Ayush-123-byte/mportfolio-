@@ -112,99 +112,85 @@ function Cv() {
               experiences. Over the years, I've honed my skills to create
               visually appealing, responsive, and user-friendly websites and web
               applications. <br />
-              My journey in web development began with a fascination for coding
-              and a commitment to staying at the forefront of this ever-evolving
-              field. I specialize in both front-end and back-end development,
-              which allows me to craft seamless, end-to-end solutions for my
-              clients.
               <br />
               My love for clean, efficient code ensures that the websites and
               applications I build are not only visually stunning but also
               performant and secure. I'm adept at utilizing modern frameworks
               and libraries, like React and Node.js, and I'm constantly
               exploring new technologies to stay ahead of the curve. <br />
-              When I'm not immersed in lines of code, I enjoy tackling complex
-              challenges, finding innovative solutions, and working
-              collaboratively with teams to bring digital visions to life. The
-              satisfaction of creating something functional and beautiful from
-              scratch is what drives me in this field.
-              <br />
-              I take great pride in staying up to date with industry trends and
-              best practices, and I'm committed to delivering high-quality,
-              tailored solutions that exceed client expectations. Whether you're
-              a business looking to establish a robust online presence or an
-              individual with a unique project in mind, I'm here to help you
-              achieve your web development goals.
               <br />
               Let's connect and discuss how I can bring your digital dreams to
               reality. I look forward to working together to create outstanding
               web experiences that make a lasting impression.
             </p>
           </div>
-          <div className="about">
-            <h2 className="title2  text-2xl font-semibold">Experience</h2>
-            <div className="box">
-              <div className="year_company">
-                <h5>2019 - 2021</h5>
-                <h5>Company Name</h5>
-              </div>
-              <div className="text">
-                <h4>Senior Web Developer</h4>
-                <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Porro exercitationem nesciunt, tenetur architecto omnis{" "}
-                </p>
-              </div>
-            </div>
-            <div className="box">
-              <div className="year_company">
-                <h5>2021 - present</h5>
-                <h5>Company Name</h5>
-              </div>
-              <div className="text">
-                <h4>Data Analyist</h4>
-                <p>
-                  Lorem ipsum,dolor sit amet consectetur adipisicing elit. Porro
-                  exercitationem nesciunt,tenetur architecto omnis{" "}
-                </p>
-              </div>
-            </div>
-          </div>
+
           <div className="about skills">
             <h2 className="title2  text-2xl font-semibold">
               Professional Skills
             </h2>
             <div className=" text-black">
-            - **Programming Languages:** JavaScript, HTML, CSS <br />
-            - **Front-End Development:** React, Redux, HTML5, CSS3, SASS/SCSS,
-            Webpack <br />
-            - **Back-End Technologies:** Node.js, Express <br />
-            - **Version Control:** Git, GitHub <br />
-            - **Responsive Design:** Bootstrap, Tailwind <br />
-            - **Database:** MongoDB, MySQL <br />
-            {/* - **Testing:** Jest, Enzyme <br /> */}
-            {/* - **Build Tools:** Babel, ESLint <br /> */}
-            {/* - **Agile Methodologies:** Scrum, Kanban <br /> */}
-            - **UI/UX Design Collaboration** <br />
-            - **Problem Solving and Debugging** <br />
+              - **Programming Languages:** JavaScript, HTML, CSS <br />
+              - **Front-End Development:** React, HTML5,CSS3, Webpack <br />
+              - **Back-End Technologies:** Node.js, Express <br />
+              - **Version Control:** Git, GitHub <br />
+              - **Responsive Design:** Bootstrap, Tailwind <br />
+              - **Database:** MongoDB, MySQL <br />
+              - **UI/UX Design Collaboration** <br />
+              - **Problem Solving and Debugging** <br />
             </div>
           </div>
           <div className="About interest">
             <h2 className="title2  text-2xl font-semibold">Interest</h2>
             <ul>
               <li>
-                <i className="fa fa-bar-chart" aria-hidden="true"></i>Trading
+                <i className="fa fa-bar-chart" aria-hidden="true"></i>Solo bike
+                riding
               </li>
               <li>
                 <i className="fa fa-laptop" aria-hidden="true"></i>Developing
               </li>
               <li>
-                <i className="fa fa-gamepad" aria-hidden="true"></i>Gaming
+                <i className="fa fa-gamepad" aria-hidden="true"></i>Listening
+                music
               </li>
               <li>
-                <i className="fa fa-briefcase" aria-hidden="true"></i>Business
+                <i className="fa fa-briefcase" aria-hidden="true"></i>Writting
               </li>
             </ul>
+          </div>
+          <div className="about skills mt-6">
+            <h2 className="title2  text-2xl font-semibold">Projects</h2>
+            <div className=" text-black">
+              <h2 className="title3  text-lg ">- Vercel clone</h2>
+              <p className=" pl-4">
+                This is the clone of vercel app i made this while i was having a
+                intern in analaha capital. React and tailwind is used in this
+                project
+              </p>
+              <h2 className="title3  text-lg ">- Notebooki</h2>
+              <p className=" pl-4">
+                A complete MERN project here i used bootstrap for its frontend
+                and express in backend,Here i perform crud operation we can
+                excess our notes by login
+              </p>
+              <h2 className="title3  text-lg ">- Whatbulk</h2>
+              <p className=" pl-4">
+                A complete MERN project here i used Tailwind for its frontend
+                and express in backend,Here i perform crud operation we can
+                excess our bulks by login, similar like notebook
+              </p>
+              <h2 className="title3  text-lg ">- Mininews app</h2>
+              <p className=" pl-4">
+                In this project i am fetching the data from news Api and
+                displaying over page, i made this project by using react and
+                bootstrap
+              </p>
+              <h2 className="title3  text-md ">
+                - mini projects like landing page, calculator, carousel and
+                many other
+              </h2>
+            </div>
           </div>
         </div>
       </div>
