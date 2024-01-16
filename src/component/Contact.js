@@ -44,7 +44,7 @@ function Contact() {
               type="text"
               id="name"
               name="name"
-              className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
+              className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
             />
           </div>
           <div className="mb-4">

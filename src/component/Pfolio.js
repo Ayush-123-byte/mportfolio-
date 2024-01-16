@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 
 import "../Style/Pfolio.css";
 import "../Style/Pfoliomedia.css";
-import ayuPic from "../assert/pic1.jpg";
+import ayuPic from "../assert/pic1.png";
 
 import { AiFillLinkedin, AiOutlineGithub, AiFillHtml5 } from "react-icons/ai";
 import { PiMedalFill, PiStudentFill } from "react-icons/pi";
@@ -39,19 +39,23 @@ function Pfolio() {
     <>
       <section id="profile">
         <div className="section__pic-container">
-          <img className=" w-full h-full rounded-full" src={ayuPic} alt="..." />
+          <img className=" w-80 h-80 rounded-full" src={ayuPic} alt="..." />
         </div>
         <div className="section__text">
           <p className="section__text__p1" style={mode_change}>
             Hello, I'm
           </p>
           <h1 className="title font-serif">Ayush Kumar </h1>
+          <p  style={mode_change}>Non-Tech to Tech</p> <br />
           <p className="section__text__p2" style={mode_change}>
-            Frontend Developer
+            Web Developer
           </p>
           <div className="btn-container">
             <Link to={"/cv"}>
-              <button className="btn btn-color-2" style={mode_change}>
+              <button
+                className="btn btn-color-2 hover:text-white hover:bg-gray-900"
+                style={mode_change}
+              >
                 Download CV
               </button>
             </Link>
@@ -62,15 +66,19 @@ function Pfolio() {
           </div>
           <div id="socials-container">
             <Link
+              className=" p-2 rounded-full  border-gray-300 hover:border-2"
               to={
                 "https://www.linkedin.com/in/ayush-kumar-3b9798270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               }
             >
               {" "}
-              <AiFillLinkedin className=" text-3xl" />
+              <AiFillLinkedin className=" text-4xl" />
             </Link>
-            <Link to={"https://github.com/Ayush-123-byte"}>
-              <AiOutlineGithub className=" text-3xl" />
+            <Link
+              to={"https://github.com/Ayush-123-byte"}
+              className=" p-2 rounded-full  border-gray-300 hover:border-2 "
+            >
+              <AiOutlineGithub className=" text-4xl" />
             </Link>
           </div>
         </div>
@@ -87,16 +95,21 @@ function Pfolio() {
                 <PiMedalFill className=" m-auto text-3xl" />
                 <h3 className=" text-3xl font-medium">Experience</h3>
                 <p style={mode_change}>
-                  Fresher <br />
+                  Intern at Analaha Capitals for 6 months <br />
+                  Intern at Codsoft for 1 month<br />
+                  Intern at Bharat Intern for 1 months <br />
                 </p>
               </div>
               <div className="details-container educa " style={mode_change1}>
                 <PiStudentFill className=" m-auto text-3xl" />
                 <h3 className=" text-3xl font-medium">Education</h3>
                 <p style={mode_change}>
-                  B.Sc. Bachelors Degree
+                 10th from Global Acad , samastipur
                   <br />
-                  M.Sc. Masters Degree
+                  12th from SNNR college chamtha, Begurarai
+                  <br />
+                  B.Sc. Bachelors Degree from, LNMU, Darbhanga
+                  <br />
                 </p>
               </div>
             </div>

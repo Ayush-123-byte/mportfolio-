@@ -18,10 +18,10 @@ const mode_change = {
           <div className="nav-links-container">
             <ul className="nav-links" >
               <li >
-                <Link to="/about"  style={mode_change}>About</Link>
+                <Link to="/"  style={mode_change}>Home</Link>
               </li>
               <li>
-                <Link to="/experience"  style={mode_change}>Experience</Link>
+                <Link to="/about"  style={mode_change}>About</Link>
               </li>
               <li>
                 <Link to="/projects"  style={mode_change}>Projects</Link>

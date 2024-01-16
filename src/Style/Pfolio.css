@@ -244,8 +244,7 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
-.btn-color-2:hover {
+.btn-color-1 {
   background: rgb(53, 53, 53);
   color: white;
 }
