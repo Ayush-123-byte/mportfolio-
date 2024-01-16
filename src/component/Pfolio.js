@@ -46,9 +46,11 @@ function Pfolio() {
             Hello, I'm
           </p>
           <h1 className="title font-serif">Ayush Kumar </h1>
-          <p  style={mode_change}>Non-Tech to Tech</p> <br />
-          <p className="section__text__p2" style={mode_change}>
-            Web Developer
+          <p style={mode_change}>Non-Tech to Tech</p> <br />
+          <p style={mode_change} className="text-lg ">Web Developer | UI/UX Designer</p>
+          <p style={mode_change} className="text-gray-400 mb-8">
+            Welcome to my portfolio. I specialize in creating responsive and
+            user-friendly web applications.
           </p>
           <div className="btn-container">
             <Link to={"/cv"}>
@@ -96,7 +98,8 @@ function Pfolio() {
                 <h3 className=" text-3xl font-medium">Experience</h3>
                 <p style={mode_change}>
                   Intern at Analaha Capitals for 6 months <br />
-                  Intern at Codsoft for 1 month<br />
+                  Intern at Codsoft for 1 month
+                  <br />
                   Intern at Bharat Intern for 1 months <br />
                 </p>
               </div>
@@ -104,7 +107,7 @@ function Pfolio() {
                 <PiStudentFill className=" m-auto text-3xl" />
                 <h3 className=" text-3xl font-medium">Education</h3>
                 <p style={mode_change}>
-                 10th from Global Acad , samastipur
+                  10th from Global Acad , samastipur
                   <br />
                   12th from SNNR college chamtha, Begurarai
                   <br />
