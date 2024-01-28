@@ -27,7 +27,7 @@ function Contact(props) {
     e.preventDefault();
 
     const response = await fetch(
-      "http://localhost:5000/api/auth/createcontact",
+      "https://folio-backend-7ot8.onrender.com/api/auth/createcontact",
       {
         method: "POST",
         headers: {
