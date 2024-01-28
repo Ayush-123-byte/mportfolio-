@@ -1,11 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import notebook from "../assert/notebook.png";
 import bulk from "../assert/bulk.png";
 import vercel from "../assert/vercel1.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { darkmode } from "../context/Darkmode";
 
 export default function Projects() {
+  let navigate = useNavigate();
+  useEffect(() => {
+    if (localStorage.getItem('token')) {
+      navigate('/about')
+    }
+    else{
+      navigate('/login')
+    }
+    // eslint-disable-next-line
+  }, []);
   const arr = [
     {
       img: vercel,

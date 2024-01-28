@@ -47,7 +47,7 @@ const Nav = (props) => {
             ))}
           </ul>
 
-          <div className=" flex justify-center items-center gap-3">
+          <div className=" flex items-center gap-3">
             <div onClick={toggleMode} className=" text-2xl text-white">
               {mode === "light" ? (
                 <MdOutlineDarkMode />

@@ -4,19 +4,22 @@ import { darkmode } from "../context/Darkmode";
 
 const Login = (props) => {
   const [credential, setCredential] = useState({ email: "", password: "" });
-  let navigate= useNavigate()
+  let navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("https://folio-backend-7ot8.onrender.com/api/auth/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: credential.email,
-        password: credential.password,
-      }),
-    });
+    const response = await fetch(
+      "https://folio-backend-7ot8.onrender.com/api/auth/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: credential.email,
+          password: credential.password,
+        }),
+      }
+    );
     const json = await response.json();
     console.log(json);
     if (json.success) {
@@ -26,28 +29,28 @@ const Login = (props) => {
       navigate("/");
     } else {
       props.showAlert(" Invalid Details", "danger");
-    } 
+    }
   };
   const onChange = (e) => {
     setCredential({ ...credential, [e.target.name]: e.target.value });
   };
-
 
   const { mode } = useContext(darkmode);
 
   const mode_change = {
     backgroundColor: mode === "light" ? "white" : "#262C3C",
     color: mode === "dark" ? "white" : "black",
-    boxShadow:mode === "light" ? "" : " 0px 3px 4px 0px #373C4A",
+    boxShadow: mode === "light" ? "" : " 0px 3px 4px 0px #373C4A",
   };
 
   return (
-    <div style={mode_change} className="  flex items-center rounded-lg mt-28 justify-center lg:w-1/2 sm:w-11/12 w-11/12 m-auto  bg-white py-8 px-4 sm:px-6 lg:px-8">
+    <div
+      style={mode_change}
+      className="  flex items-center rounded-lg mt-28 justify-center lg:w-1/2 sm:w-11/12 w-11/12 m-auto  bg-white py-8 px-4 sm:px-6 lg:px-8"
+    >
       <div className=" w-11/12 space-y-8">
         <div>
-          <h2 className="mt-2 text-center text-3xl font-extrabold ">
-            Login
-          </h2>
+          <h2 className="mt-2 text-center text-3xl font-extrabold ">Login</h2>
         </div>
         <form onSubmit={handleSubmit} className="mt-8 space-y-6">
           <div className="rounded-md shadow-sm -space-y-px">
@@ -63,6 +66,7 @@ const Login = (props) => {
                 required
                 onChange={onChange}
                 value={credential.email}
+                style={mode_change}
                 className="appearance-none rounded-none  block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
                 placeholder="Email address"
               />
@@ -77,6 +81,7 @@ const Login = (props) => {
                 type="password"
                 onChange={onChange}
                 value={credential.password}
+                style={mode_change}
                 autoComplete="current-password"
                 required
                 className="appearance-none mt-4 rounded-none  block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 focus:z-10 sm:text-sm"
@@ -90,16 +95,11 @@ const Login = (props) => {
               type="submit"
               className="group  w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
             >
-               Login
+              Login
             </button>
           </div>
         </form>
       </div>
-
-     
-
-
-
     </div>
   );
 };
