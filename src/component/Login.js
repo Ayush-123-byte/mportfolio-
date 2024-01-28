@@ -42,7 +42,7 @@ const Login = (props) => {
   };
 
   return (
-    <div style={mode_change} className="  flex items-center rounded-lg mt-20 justify-center lg:w-1/2 sm:w-11/12 w-11/12 m-auto  bg-white py-8 px-4 sm:px-6 lg:px-8">
+    <div style={mode_change} className="  flex items-center rounded-lg mt-28 justify-center lg:w-1/2 sm:w-11/12 w-11/12 m-auto  bg-white py-8 px-4 sm:px-6 lg:px-8">
       <div className=" w-11/12 space-y-8">
         <div>
           <h2 className="mt-2 text-center text-3xl font-extrabold ">
