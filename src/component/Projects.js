@@ -9,7 +9,7 @@ export default function Projects() {
   let navigate = useNavigate();
   useEffect(() => {
     if (localStorage.getItem('token')) {
-      navigate('/projext')
+      navigate('/project')
     }
     else{
       navigate('/login')
