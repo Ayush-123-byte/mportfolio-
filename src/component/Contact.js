@@ -1,17 +1,60 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { darkmode } from "../context/Darkmode";
+import { useNavigate } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
 
-function Contact() {
-  // let navigate = useNavigate();
-  // useEffect(() => {
-  //   if(localStorage.getItem('token')){
-  //     navigate('/contact');
-  //    }
-  //    else{
-  //     navigate("/login")
-  //   }    // eslint-disable-next-line
-  // }, []);
+function Contact(props) {
+  let navigate = useNavigate();
+  useEffect(() => {
+    if (localStorage.getItem("token")) {
+      navigate("/contact");
+    } else {
+      navigate("/login");
+    } // eslint-disable-next-line
+  }, []);
+
+  const [credential, setCredential] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const onChange = (e) => {
+    setCredential({ ...credential, [e.target.name]: e.target.value });
+  };
+
+  const handleContact = async (e) => {
+    e.preventDefault();
+
+    const response = await fetch(
+      "http://localhost:5000/api/auth/createcontact",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "auth-token": localStorage.getItem("token"),
+        },
+        body: JSON.stringify({
+          name: credential.name,
+          email: credential.email,
+          message: credential.message,
+        }),
+      }
+    );
+    const json = await response.json();
+    console.log(json);
+    if (json.success) {
+      props.showAlert(" I will try to get you soon  ", "success");
+    } else {
+      props.showAlert(" Already you sent a message", "danger");
+    }
+    setCredential({
+      name: "",
+      email: "",
+      message: "",
+    });
+    console.log("contact added");
+  };
 
   const { mode } = useContext(darkmode);
   const mode_change = {
@@ -31,19 +74,20 @@ function Contact() {
         <h2 className="text-3xl font-semibold  mb-4" style={mode_change1}>
           Get in Touch
         </h2>
-        <form>
+        <form onSubmit={handleContact}>
           <div className="mb-4">
-            <label
-              htmlFor="name"
-              className="block  font-medium"
-              style={mode_change1}
-            >
+            <label htmlFor="name" className="block  font-medium">
               Name
             </label>
             <input
               type="text"
               id="name"
               name="name"
+              value={credential.name}
+              onChange={onChange}
+              minLength={3}
+              required
+              style={mode_change}
               className="w-full mt-1 px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
             />
           </div>
@@ -59,6 +103,11 @@ function Contact() {
               type="email"
               id="email"
               name="email"
+              value={credential.email}
+              onChange={onChange}
+              minLength={3}
+              required
+              style={mode_change}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
             />
           </div>
@@ -66,7 +115,7 @@ function Contact() {
             <label
               htmlFor="message"
               className="block   font-medium"
-              style={mode_change1}
+              style={mode_change}
             >
               Message
             </label>
@@ -74,6 +123,11 @@ function Contact() {
               id="message"
               name="message"
               rows="4"
+              value={credential.message}
+              onChange={onChange}
+              minLength={3}
+              required
+              style={mode_change}
               className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring focus:border-blue-300"
             ></textarea>
           </div>
