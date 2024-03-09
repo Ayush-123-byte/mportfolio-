@@ -1,7 +1,9 @@
 import React, { useContext, useEffect } from "react";
 import notebook from "../assert/notebook.png";
 import bulk from "../assert/bulk.png";
+import food_blog from "../assert/food_blog.png";
 import vercel from "../assert/vercel1.png";
+import work_manager from "../assert/work_manager.png";
 import { Link, useNavigate } from "react-router-dom";
 import { darkmode } from "../context/Darkmode";
 
@@ -19,9 +21,9 @@ export default function Projects() {
   const arr = [
     {
       img: vercel,
-      title: "Vercel",
+      title: "Velvet",
       about:
-        "This is the clone of vercel app. only demonstrating the frontend part backend part will be added later  ",
+        "This is the clone of velvet app. only demonstrating the frontend part backend part will be added later  ",
       demo: "https://velvet1.vercel.app/",
     },
     {
@@ -37,6 +39,20 @@ export default function Projects() {
       about:
         " Whatbulk again a demo of a mern app and it is bit similar to note book you and preform crud operation here and store your files.",
       demo: "https://bulk-f.vercel.app/",
+    },
+    {
+      img: work_manager,
+      title: "Work_Manager",
+      about:
+        " This is my next.js project here i user to manage my works on daily basis ",
+      demo: "https://work-manager-nextjs-eight.vercel.app/login",
+    },
+    {
+      img: food_blog,
+      title: "Food_Blog",
+      about:
+        " This is my vite + react.js project here i user to demonstrate food blogs and login and signup  functionality. This is a simple blog for sharing recipes",
+      demo: "https://food-blogfrontend-usb5-5ckz7rjoa-ayush123bytes-projects.vercel.app/login",
     },
   ];
 
