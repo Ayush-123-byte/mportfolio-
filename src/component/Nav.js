@@ -12,12 +12,12 @@ const Nav = (props) => {
     { name: "Contact", link: "/contact" },
   ];
   let [open, setOpen] = useState(false);
-  let navigate = useNavigate();
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    navigate("/login");
-    props.showAlert(" Log out Successfully", "success");
-  };
+  // let navigate = useNavigate();
+  // const handleLogout = () => {
+  //   localStorage.removeItem("token");
+  //   navigate("/login");
+  //   props.showAlert(" Log out Successfully", "success");
+  // };
   const { mode, toggleMode } = useContext(darkmode);
   return (
     <>
@@ -55,7 +55,7 @@ const Nav = (props) => {
                 <MdOutlineLightMode />
               )}
             </div>
-            <div className=" flex items-center gap-3 flex-wrap">
+            {/* <div className=" flex items-center gap-3 flex-wrap">
               {!localStorage.getItem("token") ? (
                 <div>
                   <Link className="text-white hover:text-blue-200" to="/login">
@@ -87,7 +87,7 @@ const Nav = (props) => {
                   Log out
                 </button>
               )}
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

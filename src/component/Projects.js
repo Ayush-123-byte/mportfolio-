@@ -8,16 +8,16 @@ import { Link, useNavigate } from "react-router-dom";
 import { darkmode } from "../context/Darkmode";
 
 export default function Projects() {
-  let navigate = useNavigate();
-  useEffect(() => {
-    if (localStorage.getItem('token')) {
-      navigate('/projects')
-    }
-    else{
-      navigate('/login')
-    }
-    // eslint-disable-next-line
-  }, []);
+  // let navigate = useNavigate();
+  // useEffect(() => {
+  //   if (localStorage.getItem('token')) {
+  //     navigate('/projects')
+  //   }
+  //   else{
+  //     navigate('/login')
+  //   }
+  //   // eslint-disable-next-line
+  // }, []);
   const arr = [
     {
       img: vercel,
@@ -71,6 +71,7 @@ export default function Projects() {
       <div className=" mt-10 grid  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 m-auto w-11/12 gap-6">
         {arr.map((ele, ind) => (
           <div
+          key={ind}
             className="block  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] "
             style={mode_change}
           >

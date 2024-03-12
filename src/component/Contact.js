@@ -32,7 +32,7 @@ function Contact(props) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "auth-token": localStorage.getItem("token"),
+          // "auth-token": localStorage.getItem("token"),
         },
         body: JSON.stringify({
           name: credential.name,
@@ -46,7 +46,7 @@ function Contact(props) {
     if (json.success) {
       props.showAlert(" I will try to get you soon  ", "success");
     } else {
-      props.showAlert(" Already you sent a message", "danger");
+      props.showAlert("Not able to send message", "danger");
     }
     setCredential({
       name: "",

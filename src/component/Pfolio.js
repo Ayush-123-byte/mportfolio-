@@ -19,14 +19,14 @@ import { Link, useNavigate } from "react-router-dom";
 import { darkmode } from "../context/Darkmode";
 import Projects from "./Projects";
 function Pfolio() {
-  let navigate = useNavigate();
-  useEffect(() => {
-    if (localStorage.getItem("token")) {
-      navigate("/");
-    } else {
-      navigate("/login");
-    } // eslint-disable-next-line
-  }, []);
+  // let navigate = useNavigate();
+  // useEffect(() => {
+  //   if (localStorage.getItem("token")) {
+  //     navigate("/");
+  //   } else {
+  //     navigate("/login");
+  //   } // eslint-disable-next-line
+  // }, []);
   const { mode } = useContext(darkmode);
   const mode_change = {
     color: mode === "dark" ? "white" : "#333",
