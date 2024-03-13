@@ -1,6 +1,6 @@
 import React from "react";
 import "../Style/Cv.css";
-import ayush from "../assert/pic1.jpg";
+import ayush from "../assert/pic1.png";
 import { AiFillLinkedin, AiOutlineGithub, AiOutlineMail } from "react-icons/ai";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";

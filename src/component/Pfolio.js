@@ -3,8 +3,9 @@ import React, { useContext, useEffect } from "react";
 import "../Style/Pfolio.css";
 import "../Style/Pfoliomedia.css";
 import ayuPic from "../assert/pic1.png";
+import { TbBrandNextjs } from "react-icons/tb";
 
-import { AiFillLinkedin, AiOutlineGithub, AiFillHtml5 } from "react-icons/ai";
+import { AiFillLinkedin, AiOutlineGithub, AiFillHtml5, AiFillInstagram } from "react-icons/ai";
 import { PiMedalFill, PiStudentFill } from "react-icons/pi";
 import {
   BiLogoCss3,
@@ -47,7 +48,9 @@ function Pfolio() {
           </p>
           <h1 className="title font-serif">Ayush Kumar </h1>
           <p style={mode_change}>Non-Tech to Tech</p> <br />
-          <p style={mode_change} className="text-lg ">Web Developer | UI/UX Designer</p>
+          <p style={mode_change} className="text-lg ">
+            Web Developer | UI/UX Designer
+          </p>
           <p style={mode_change} className="text-gray-400 mb-8">
             Welcome to my portfolio. I specialize in creating responsive and
             user-friendly web applications.
@@ -92,16 +95,19 @@ function Pfolio() {
         <h1 className="title">About Me</h1>
         <div className="section-container">
           <div className="">
-            <div className="about-containers ">
-              <div className="details-container " style={mode_change1}>
+            <div className="about-containers  lg:px-32  ">
+              <div className="details-container  " style={mode_change1}>
                 <PiMedalFill className=" m-auto text-3xl" />
                 <h3 className=" text-3xl font-medium">Experience</h3>
-                <p style={mode_change}>
-                  Intern at Analaha Capitals for 6 months <br />
-                  Intern at Codsoft for 1 month
-                  <br />
-                  Intern at Bharat Intern for 1 months <br />
-                </p>
+                <ul style={mode_change}>
+                  <li>Intern at Analaha Capitals for 6 months </li>
+                  <li>Intern at Codsoft for 1 month</li>
+                  <li>Intern at Bharat Intern for 1 months</li>
+                  <li>
+                    Intern at Grofkit , a startup company in the field of
+                    grocery{" "}
+                  </li>
+                </ul>
               </div>
               <div className="details-container educa " style={mode_change1}>
                 <PiStudentFill className=" m-auto text-3xl" />
@@ -116,7 +122,7 @@ function Pfolio() {
                 </p>
               </div>
             </div>
-            <div className="text-container p-10">
+            <div className="text-container px-20">
               <p style={mode_change}>
                 Hello, I'm Ayush, a passionate web developer with a keen eye for
                 design and a knack for turning ideas into interactive digital
@@ -161,7 +167,7 @@ function Pfolio() {
         </p>
         <h1 className="title">Skills</h1>
         <div className="experience-details-container">
-          <div className="about-containers">
+          <div className="about-containers lg:px-32">
             <div className="details-container" style={mode_change1}>
               <h2 className="experience-sub-title" style={mode_change}>
                 Frontend Development
@@ -246,6 +252,13 @@ function Pfolio() {
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
+                <article>
+                  <TbBrandNextjs className=" text-3xl" />
+                  <div>
+                    <h3>Next.js</h3>
+                    <p style={mode_change}>Intermediate</p>
+                  </div>
+                </article>
               </div>
             </div>
           </div>
@@ -256,7 +269,9 @@ function Pfolio() {
           Browse My Recent
         </p>
         <h1 className="title">Projects</h1>
-        <Projects />
+        <div className=" h-[450px] overflow-auto ">
+          <Projects />
+        </div>
       </section>
       <section id="contact">
         <p className="section__text__p1" style={mode_change}>
@@ -280,6 +295,17 @@ function Pfolio() {
                 style={mode_change}
               >
                 LinkedIn
+              </Link>
+            </p>
+          </div>
+          <div className="contact-info-container">
+            <AiFillInstagram className=" text-2xl" />
+            <p>
+              <Link
+                to="https://www.instagram.com/being_a_07/"
+                style={mode_change}
+              >
+                Instagram
               </Link>
             </p>
           </div>

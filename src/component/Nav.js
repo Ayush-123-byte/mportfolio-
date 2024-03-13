@@ -10,6 +10,8 @@ const Nav = (props) => {
     { name: "About", link: "/about" },
     { name: "Projects", link: "/projects" },
     { name: "Contact", link: "/contact" },
+    { name: "Comment", link: "/comment" },
+    { name: "Read Comments", link: "/review" },
   ];
   let [open, setOpen] = useState(false);
   // let navigate = useNavigate();
@@ -21,34 +23,43 @@ const Nav = (props) => {
   const { mode, toggleMode } = useContext(darkmode);
   return (
     <>
-      <div className="shadow-md w-full font-serif  fixed top-0 left-0">
-        <div className="md:flex items-center justify-between bg-gray-900  py-4 md:px-10 px-7">
-          <div
-            onClick={() => setOpen(!open)}
-            className="text-3xl absolute right-8 text-white top-5 cursor-pointer md:hidden"
-          >
-            <CiMenuBurger name={open ? "close" : "menu"}></CiMenuBurger>
-          </div>
-
+      <div className="shadow-md w-full font-serif  fixed top-0 left-0 ">
+        <div className="md:flex items-center justify-between bg-gray-900 md:py-0 py-4 md:px-10 px-7">
           <ul
             className={`md:flex md:items-center md:pb-0 pb-12  absolute md:static bg-gray-900  md:z-auto z-[-1] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-in ${
               open ? "top-10 " : "top-[-490px]"
             }`}
           >
-            {Links.map((link) => (
-              <li key={link.name} className="md:ml-8 text-xl md:my-0 my-7">
-                <Link
-                  to={link.link}
-                  className=" text-white hover:text-gray-400 duration-500"
+            <li className=" w-32 md:mt-0  mt-10 text-white">
+              <img src="logo1.png" alt="" />
+            </li>
+            {Links.map((link,ind) => (
+              
+                <div
+                  key={ind}
+                  className="md:ml-8 ml-10 text-xl md:my-0 my-5"
                 >
-                  {link.name}
-                </Link>
-              </li>
+                  <Link
+                    to={link.link}
+                    className=" text-white hover:text-gray-400 duration-500"
+                  >
+                    <div onClick={() => setOpen(!open)}>{link.name}</div>
+                  </Link>
+                </div>
+            
             ))}
           </ul>
-
-          <div className=" flex items-center gap-3">
-            <div onClick={toggleMode} className=" text-2xl text-white">
+          <div className=" flex items-center justify-between gap-3">
+            <button
+              onClick={() => setOpen(!open)}
+              className="text-3xl border rounded-md p-1  text-white top-5 cursor-pointer md:hidden"
+            >
+              <CiMenuBurger name={open ? "close" : "menu"}></CiMenuBurger>
+            </button>
+            <div
+              onClick={toggleMode}
+              className=" cursor-pointer text-2xl text-white"
+            >
               {mode === "light" ? (
                 <MdOutlineDarkMode />
               ) : (

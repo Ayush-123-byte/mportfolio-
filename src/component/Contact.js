@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 // import { useNavigate } from 'react-router-dom';
 
 function Contact(props) {
-  let navigate = useNavigate();
-  useEffect(() => {
-    if (localStorage.getItem("token")) {
-      navigate("/contact");
-    } else {
-      navigate("/login");
-    } // eslint-disable-next-line
-  }, []);
+  // let navigate = useNavigate();
+  // useEffect(() => {
+  //   if (localStorage.getItem("token")) {
+  //     navigate("/contact");
+  //   } else {
+  //     navigate("/login");
+  //   } // eslint-disable-next-line
+  // }, []);
 
   const [credential, setCredential] = useState({
     name: "",
@@ -32,7 +32,7 @@ function Contact(props) {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          // "auth-token": localStorage.getItem("token"),
+          "auth-token": localStorage.getItem("token"),
         },
         body: JSON.stringify({
           name: credential.name,

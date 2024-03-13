@@ -269,10 +269,12 @@ section {
 
 
 
-
+::-webkit-scrollbar{
+  width: 2px;
+}
   .about-containers {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
     flex-wrap: wrap;

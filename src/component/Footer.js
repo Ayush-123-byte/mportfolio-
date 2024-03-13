@@ -13,7 +13,7 @@ const mode_change = {
   return (
     <>
       {" "}
-      <footer>
+      <footer className="">
         <nav>
           <div className="nav-links-container">
             <ul className="nav-links" >
