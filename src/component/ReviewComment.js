@@ -5,7 +5,7 @@ const ReviewComment = (props) => {
   const initialData = [];
   const [data, setData] = useState(initialData);
   const getComment = async () => {
-    const response = await fetch("http://localhost:5000/api/auth/comments", {
+    const response = await fetch("https://folio-backend-7ot8.onrender.com/api/auth/comments", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
