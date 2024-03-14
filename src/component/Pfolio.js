@@ -95,7 +95,7 @@ function Pfolio() {
         <h1 className="title">About Me</h1>
         <div className="section-container">
           <div className="">
-            <div className="about-containers  lg:px-32  ">
+            <div className="about-containers  lg:px-16 px-0 grid md:grid-cols-2 gap-32  grid-cols-1  ">
               <div className="details-container  " style={mode_change1}>
                 <PiMedalFill className=" m-auto text-3xl" />
                 <h3 className=" text-3xl font-medium">Experience</h3>
@@ -122,7 +122,7 @@ function Pfolio() {
                 </p>
               </div>
             </div>
-            <div className="text-container px-20">
+            <div className="text-container lg:px-20">
               <p style={mode_change}>
                 Hello, I'm Ayush, a passionate web developer with a keen eye for
                 design and a knack for turning ideas into interactive digital
@@ -167,12 +167,12 @@ function Pfolio() {
         </p>
         <h1 className="title">Skills</h1>
         <div className="experience-details-container">
-          <div className="about-containers lg:px-32">
+          <div className="experience-containers lg:px-16 grid md:grid-cols-2 grid-cols-1 gap-32">
             <div className="details-container" style={mode_change1}>
               <h2 className="experience-sub-title" style={mode_change}>
                 Frontend Development
               </h2>
-              <div className="article-container">
+              <div className="article-container ">
                 <article>
                   <AiFillHtml5 className=" text-3xl" />
                   <div>

@@ -156,11 +156,6 @@ section {
   min-height: fit-content;
 }
 
-.section-container {
-  display: flex;
-}
-
-
 
   #profile {
     display: flex;
@@ -273,11 +268,8 @@ section {
   width: 2px;
 }
   .about-containers {
-    display: flex;
-    gap: 5rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
-    flex-wrap: wrap;
   }
 
 .about-pic {
@@ -324,18 +316,12 @@ section {
 }
 
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
 .article-container {
   display: flex;
+  width: 100%;
   text-align: initial;
   flex-wrap: wrap;
   word-break: break-all;
-
   flex-direction: row;
   gap: 2.5rem;
   justify-content: space-around;
@@ -343,7 +329,7 @@ section {
 
 article {
   display: flex;
-  width: 10rem;
+  width: 11rem;
   justify-content: space-around;
   gap: 0.5rem;
 }

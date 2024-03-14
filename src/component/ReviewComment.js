@@ -27,7 +27,7 @@ const ReviewComment = (props) => {
     // eslint-disable-next-line
   }, []);
   return (
-    <div className=" grid grid-cols-3 gap-5 p-10">
+    <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 p-10">
       {data.map((ele) => {
         return <CommentReviewCard name={ele.name} comment={ele.comment} />;
       })}
