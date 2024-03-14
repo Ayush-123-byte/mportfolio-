@@ -1,10 +1,9 @@
 import React, { useContext, useEffect } from "react";
-
+import { SiSpringboot } from "react-icons/si";
 import "../Style/Pfolio.css";
 import "../Style/Pfoliomedia.css";
 import ayuPic from "../assert/pic1.png";
 import { TbBrandNextjs } from "react-icons/tb";
-
 import {
   AiFillLinkedin,
   AiOutlineGithub,
@@ -42,10 +41,14 @@ function Pfolio() {
     boxShadow: mode === "light" ? "" : " 0px 3px 4px 0px #373C4A",
   };
   return (
-    <div className=" md:px-20 px-10 space-y-32  ">
+    <div className=" md:px-20 px-10 space-y-32 mt-16 ">
       <div id="profile">
         <div className="section__pic-container flex items-center  justify-center">
-          <img className=" md:w-full md:h-full w-64 h-64 rounded-full" src={ayuPic} alt="..." />
+          <img
+            className=" md:w-full md:h-full w-64 h-64 rounded-full"
+            src={ayuPic}
+            alt="..."
+          />
         </div>
         <div className="section__text">
           <p className="section__text__p1" style={mode_change}>
@@ -63,7 +66,7 @@ function Pfolio() {
           <div className="btn-container">
             <Link to={"/cv"}>
               <button
-                className="btn btn-color-2 hover:text-white hover:bg-gray-900"
+                className="btn btn-color-2 hover:text-white hover:scale-105"
                 style={mode_change}
               >
                 Download CV
@@ -233,7 +236,7 @@ function Pfolio() {
                   <SiMongodb className=" text-3xl" />
                   <div>
                     <h3>MongoDB</h3>
-                    <p style={mode_change}>Basic</p>
+                    <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
                 <article>
@@ -261,6 +264,13 @@ function Pfolio() {
                   <TbBrandNextjs className=" text-3xl" />
                   <div>
                     <h3>Next.js</h3>
+                    <p style={mode_change}>Intermediate</p>
+                  </div>
+                </article>
+                <article>
+                  <SiSpringboot className=" text-3xl" />
+                  <div>
+                    <h3>Springboot</h3>
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>

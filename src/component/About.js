@@ -28,7 +28,7 @@ function About() {
         className=" rounded-lg shadow-lg p-8 max-w-4xl w-full text-center"
         style={mode_change}
       >
-        <h2 className="text-3xl font-semibold  mb-4">About Us</h2>
+        <h2 className="text-3xl font-semibold  mb-4">About Me</h2>
         <p className="    mb-6" style={mode_change}>
           About Me - Web Developer Hello, I'm Ayush, a passionate web developer
           with a keen eye for design and a knack for turning ideas into
