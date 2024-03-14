@@ -23,7 +23,6 @@ const AddComment = (props) => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "auth-token": localStorage.getItem("token"),
       },
       body: JSON.stringify({
         comment: credential.comment,
