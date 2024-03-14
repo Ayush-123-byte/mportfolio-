@@ -5,7 +5,12 @@ import "../Style/Pfoliomedia.css";
 import ayuPic from "../assert/pic1.png";
 import { TbBrandNextjs } from "react-icons/tb";
 
-import { AiFillLinkedin, AiOutlineGithub, AiFillHtml5, AiFillInstagram } from "react-icons/ai";
+import {
+  AiFillLinkedin,
+  AiOutlineGithub,
+  AiFillHtml5,
+  AiFillInstagram,
+} from "react-icons/ai";
 import { PiMedalFill, PiStudentFill } from "react-icons/pi";
 import {
   BiLogoCss3,
@@ -37,10 +42,10 @@ function Pfolio() {
     boxShadow: mode === "light" ? "" : " 0px 3px 4px 0px #373C4A",
   };
   return (
-    <>
-      <section id="profile">
-        <div className="section__pic-container">
-          <img className=" w-80 h-80 rounded-full" src={ayuPic} alt="..." />
+    <div className=" md:px-20 px-10 space-y-32  ">
+      <div id="profile">
+        <div className="section__pic-container flex items-center  justify-center">
+          <img className=" md:w-full md:h-full w-64 h-64 rounded-full" src={ayuPic} alt="..." />
         </div>
         <div className="section__text">
           <p className="section__text__p1" style={mode_change}>
@@ -87,8 +92,8 @@ function Pfolio() {
             </Link>
           </div>
         </div>
-      </section>
-      <section id="about" style={mode_change}>
+      </div>
+      <div id="about" style={mode_change}>
         <p className="section__text__p1" style={mode_change}>
           Get To Know More
         </p>
@@ -160,8 +165,8 @@ function Pfolio() {
             </div>
           </div>
         </div>
-      </section>
-      <section id="experience">
+      </div>
+      <div id="experience">
         <p className="section__text__p1" style={mode_change}>
           Explore My
         </p>
@@ -170,7 +175,7 @@ function Pfolio() {
           <div className="experience-containers lg:px-16 grid md:grid-cols-2 grid-cols-1 gap-32">
             <div className="details-container" style={mode_change1}>
               <h2 className="experience-sub-title" style={mode_change}>
-                Frontend Development
+                Frontend
               </h2>
               <div className="article-container ">
                 <article>
@@ -221,7 +226,7 @@ function Pfolio() {
             </div>
             <div className="details-container educa " style={mode_change1}>
               <h2 className="experience-sub-title" style={mode_change}>
-                Frontend Development
+                Backend
               </h2>
               <div className="article-container">
                 <article>
@@ -263,8 +268,8 @@ function Pfolio() {
             </div>
           </div>
         </div>
-      </section>
-      <section id="projects">
+      </div>
+      <div id="projects">
         <p className="section__text__p1" style={mode_change}>
           Browse My Recent
         </p>
@@ -272,8 +277,8 @@ function Pfolio() {
         <div className=" h-[450px] overflow-auto ">
           <Projects />
         </div>
-      </section>
-      <section id="contact">
+      </div>
+      <div id="contact">
         <p className="section__text__p1" style={mode_change}>
           Get in Touch
         </p>
@@ -310,8 +315,8 @@ function Pfolio() {
             </p>
           </div>
         </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
 

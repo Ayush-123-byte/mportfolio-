@@ -167,14 +167,10 @@ section {
 
 
 .section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+  
 }
 
 .section__text {
-  width: 50%;
   align-self: center;
   text-align: center;
 }
