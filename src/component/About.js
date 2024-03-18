@@ -4,16 +4,16 @@ import { useNavigate } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 
 function About() {
-  let navigate = useNavigate();
-  useEffect(() => {
-    if (localStorage.getItem('token')) {
-      navigate('/about')
-    }
-    else{
-      navigate('/login')
-    }
-    // eslint-disable-next-line
-  }, []);
+  // let navigate = useNavigate();
+  // useEffect(() => {
+  //   if (localStorage.getItem('token')) {
+  //     navigate('/about')
+  //   }
+  //   else{
+  //     navigate('/login')
+  //   }
+  //   // eslint-disable-next-line
+  // }, []);
 
   const { mode } = useContext(darkmode);
   const mode_change = {
