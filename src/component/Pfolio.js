@@ -1,5 +1,11 @@
 import React, { useContext, useEffect } from "react";
-import { SiSpringboot } from "react-icons/si";
+import {
+  SiApachemaven,
+  SiMyspace,
+  SiOracle,
+  SiSpring,
+  SiSpringboot,
+} from "react-icons/si";
 import "../Style/Pfolio.css";
 import "../Style/Pfoliomedia.css";
 import ayuPic from "../assert/pic1.png";
@@ -174,21 +180,21 @@ function Pfolio() {
           Explore My
         </p>
         <h1 className="title">Skills</h1>
-        <div className="experience-details-container">
+        <div className="experience-details-container mt-10">
           <div className="experience-containers lg:px-16 grid md:grid-cols-2 grid-cols-1 gap-32">
             <div className="details-container" style={mode_change1}>
               <h2 className="experience-sub-title" style={mode_change}>
                 Frontend
               </h2>
               <div className="article-container ">
-                <article>
+                <article className=" hover:scale-105">
                   <AiFillHtml5 className=" text-3xl" />
                   <div>
                     <h3>HTML</h3>
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
-                <article>
+                <article className=" hover:scale-105">
                   <BiLogoCss3 className=" text-3xl" />
                   <div>
                     <h3>CSS</h3>
@@ -196,7 +202,7 @@ function Pfolio() {
                   </div>
                 </article>
 
-                <article>
+                <article className=" hover:scale-105">
                   <BiLogoJavascript className=" text-3xl" />
                   <div>
                     <h3>JavaScript</h3>
@@ -204,21 +210,21 @@ function Pfolio() {
                   </div>
                 </article>
 
-                <article>
+                <article className=" hover:scale-105">
                   <BiLogoTailwindCss className=" text-3xl" />
                   <div>
                     <h3>Tailwind</h3>
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
-                <article>
+                <article className=" hover:scale-105">
                   <RiBootstrapFill className=" text-3xl" />
                   <div>
                     <h3>Bootstrap</h3>
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
-                <article>
+                <article className=" hover:scale-105">
                   <BiLogoReact className=" text-3xl" />
                   <div>
                     <h3>React</h3>
@@ -232,48 +238,86 @@ function Pfolio() {
                 Backend
               </h2>
               <div className="article-container">
-                <article>
-                  <SiMongodb className=" text-3xl" />
-                  <div>
-                    <h3>MongoDB</h3>
-                    <p style={mode_change}>Intermediate</p>
-                  </div>
-                </article>
-                <article>
+                <article className=" hover:scale-105">
                   <BiLogoNodejs className=" text-3xl" />
                   <div>
                     <h3>Node JS</h3>
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
-                <article>
+                <article className=" hover:scale-105">
                   <SiExpress className=" text-3xl" />
                   <div>
                     <h3>Express JS</h3>
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
-                <article>
-                  <AiOutlineGithub className=" text-3xl" />
-                  <div>
-                    <h3>Git</h3>
-                    <p style={mode_change}>Intermediate</p>
-                  </div>
-                </article>
-                <article>
+
+                <article className=" hover:scale-105">
                   <TbBrandNextjs className=" text-3xl" />
                   <div>
                     <h3>Next.js</h3>
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
-                <article>
+                <article className=" hover:scale-105">
+                  <SiApachemaven className=" text-3xl" />
+                  <div>
+                    <h3>Maven</h3>
+                    <p style={mode_change}>Intermediate</p>
+                  </div>
+                </article>
+                <article className=" hover:scale-105">
+                  <SiSpring className=" text-3xl" />
+                  <div>
+                    <h3>Spring</h3>
+                    <p style={mode_change}>Intermediate</p>
+                  </div>
+                </article>
+                <article className=" hover:scale-105">
                   <SiSpringboot className=" text-3xl" />
                   <div>
                     <h3>Springboot</h3>
                     <p style={mode_change}>Intermediate</p>
                   </div>
                 </article>
+              </div>
+            </div>
+            <div className="">
+              <div className="details-container educa " style={mode_change1}>
+                <h2 className="experience-sub-title" style={mode_change}>
+                  DataBase & Version Control
+                </h2>
+                <div className="article-container">
+                  <article className=" hover:scale-105">
+                    <SiMongodb className=" text-3xl" />
+                    <div>
+                      <h3>MongoDB</h3>
+                      <p style={mode_change}>Intermediate</p>
+                    </div>
+                  </article>
+                  <article className=" hover:scale-105">
+                    <SiMyspace className=" text-3xl" />
+                    <div>
+                      <h3>Mysql</h3>
+                      <p style={mode_change}>Intermediate</p>
+                    </div>
+                  </article>
+                  <article className=" hover:scale-105">
+                    <SiOracle className=" text-3xl" />
+                    <div>
+                      <h3>Oracel</h3>
+                      <p style={mode_change}>Intermediate</p>
+                    </div>
+                  </article>
+                  <article className=" hover:scale-105">
+                    <AiOutlineGithub className=" text-3xl" />
+                    <div>
+                      <h3>Git</h3>
+                      <p style={mode_change}>Intermediate</p>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
           </div>

@@ -71,13 +71,17 @@ export default function Projects() {
       <div className=" mt-10 grid  lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 grid-cols-1 m-auto w-11/12 gap-6">
         {arr.map((ele, ind) => (
           <div
-          key={ind}
+            key={ind}
             className="block  rounded-lg shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] "
             style={mode_change}
           >
-            <Link to="/">
-              <img className="rounded-t-lg  m-auto hover:scale-105" src={ele.img} alt="img" />
-            </Link>
+            <div>
+              <img
+                className="rounded-t-lg  m-auto hover:scale-105"
+                src={ele.img}
+                alt="img"
+              />
+            </div>
             <hr className=" mt-4" />
             <div className="p-6">
               <h5 className="mb-2 text-xl font-medium leading-tight ">
@@ -87,22 +91,22 @@ export default function Projects() {
                 {ele.about}
               </p>
               <div className="flex flex-wrap space-y-2 gap-x-2">
-              <Link to="https://github.com/Ayush-123-byte">
-                <button
-                  type="button"
-                  className=" mt-2 inline-block bg-blue-600 rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:scale-105 "
-                >
-                  GitHub
-                </button>
-              </Link>
-              <Link to={ele.demo}>
-                <button
-                  type="button"
-                  className="inline-block bg-blue-600 rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:scale-105"
-                >
-                  Live Demo
-                </button>
-              </Link>
+                <Link to="https://github.com/Ayush-123-byte">
+                  <button
+                    type="button"
+                    className=" mt-2 inline-block bg-blue-600 rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:scale-105 "
+                  >
+                    GitHub
+                  </button>
+                </Link>
+                <Link to={ele.demo}>
+                  <button
+                    type="button"
+                    className="inline-block bg-blue-600 rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:scale-105"
+                  >
+                    Live Demo
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
