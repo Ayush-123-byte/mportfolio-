@@ -3,6 +3,7 @@ import notebook from "../assert/notebook.png";
 import bulk from "../assert/bulk.png";
 import food_blog from "../assert/food_blog.png";
 import vercel from "../assert/vercel1.png";
+import grofkit from "../assert/grofkit.png";
 import work_manager from "../assert/work_manager.png";
 import { Link, useNavigate } from "react-router-dom";
 import { darkmode } from "../context/Darkmode";
@@ -53,6 +54,13 @@ export default function Projects() {
       about:
         " This is my vite + react.js project here i user to demonstrate food blogs and login and signup  functionality. This is a simple blog for sharing recipes",
       demo: "https://food-blogfrontend-usb5-5ckz7rjoa-ayush123bytes-projects.vercel.app/login",
+    },
+    {
+      img: grofkit,
+      title: "GrofKit",
+      about:
+        "This project i had made for a client whom i meet on instagram and they paid a small amount for it, it is just for the demo purpous for there company  ",
+      demo: "https://f-grofkit.vercel.app/",
     },
   ];
 
