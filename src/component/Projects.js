@@ -4,6 +4,7 @@ import bulk from "../assert/bulk.png";
 import food_blog from "../assert/food_blog.png";
 import vercel from "../assert/vercel1.png";
 import grofkit from "../assert/grofkit.png";
+import foodblog from "../assert/foodblog.png";
 import work_manager from "../assert/work_manager.png";
 import { Link, useNavigate } from "react-router-dom";
 import { darkmode } from "../context/Darkmode";
@@ -61,6 +62,13 @@ export default function Projects() {
       about:
         "This project i had made for a client whom i meet on instagram and they paid a small amount for it, it is just for the demo purpous for there company  ",
       demo: "https://f-grofkit.vercel.app/",
+    },
+    {
+      img: foodblog,
+      title: "Food_Blog",
+      about:
+        "Here i have made i full flage login and signup form here with bcrypt and jwt node packages and here i am fetching data form mongoDB to disply food items ",
+      demo: "https://foodblog-omega.vercel.app/",
     },
   ];
 
