@@ -1,7 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import notebook from "../assert/notebook.png";
 import bulk from "../assert/bulk.png";
-import food_blog from "../assert/food_blog.png";
 import vercel from "../assert/vercel1.png";
 import grofkit from "../assert/grofkit.png";
 import foodblog from "../assert/foodblog.png";
@@ -50,11 +49,11 @@ export default function Projects() {
       demo: "https://work-manager-nextjs-eight.vercel.app/login",
     },
     {
-      img: food_blog,
+      img: foodblog,
       title: "Food_Blog",
       about:
         " This is my vite + react.js project here i user to demonstrate food blogs and login and signup  functionality. This is a simple blog for sharing recipes",
-      demo: "https://food-blogfrontend-usb5-5ckz7rjoa-ayush123bytes-projects.vercel.app/login",
+      demo: "https://foodblog-omega.vercel.app/",
     },
     {
       img: grofkit,
@@ -62,13 +61,6 @@ export default function Projects() {
       about:
         "This project i had made for a client whom i meet on instagram and they paid a small amount for it, it is just for the demo purpous for there company  ",
       demo: "https://f-grofkit.vercel.app/",
-    },
-    {
-      img: foodblog,
-      title: "Food_Blog",
-      about:
-        "Here i have made i full flage login and signup form here with bcrypt and jwt node packages and here i am fetching data form mongoDB to disply food items ",
-      demo: "https://foodblog-omega.vercel.app/",
     },
   ];
 
