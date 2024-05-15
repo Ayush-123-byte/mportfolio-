@@ -61,7 +61,7 @@ function Cv() {
                 <span className="icon">
                   <AiOutlineGithub />
                 </span>
-                <Link to="https://github.com/Ayush-123-byte">
+                <Link to="https://github.com/Ayush-2302">
                   <span className="text">GitHub </span>
                 </Link>
               </li>

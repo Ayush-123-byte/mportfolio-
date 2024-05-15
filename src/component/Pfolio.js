@@ -94,7 +94,7 @@ function Pfolio() {
               <AiFillLinkedin className=" text-4xl" />
             </Link>
             <Link
-              to={"https://github.com/Ayush-123-byte"}
+              to={"https://github.com/Ayush-2302"}
               className=" p-2 rounded-full  border-gray-300 hover:border-2 "
             >
               <AiOutlineGithub className=" text-4xl" />

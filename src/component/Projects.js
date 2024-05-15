@@ -99,7 +99,7 @@ export default function Projects() {
                 {ele.about}
               </p>
               <div className="flex flex-wrap space-y-2 gap-x-2">
-                <Link to="https://github.com/Ayush-123-byte">
+                <Link to="https://github.com/Ayush-2302">
                   <button
                     type="button"
                     className=" mt-2 inline-block bg-blue-600 rounded bg-primary px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-white hover:scale-105 "
